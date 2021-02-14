@@ -1,0 +1,89 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+   int test,i,j,count,len,strl[100],max,space;
+   count = len = max =0;
+   char str[100][100];
+   scanf("%d",&test);
+    for(i=0;i<test;i++)
+    {
+        scanf("%s",&str[i]);
+    }
+
+    // storing the length of all strings //
+    for(i=0;i<test;i++)
+    {
+        strl[i] = strlen(str[i]);
+    }
+
+    max =0;
+    for(i=0;i<test;i++)
+    {
+        if(strl[i]>max)
+        {
+            max = strl[i];
+        }
+
+    }
+
+
+    // even odd comparision string printing //
+    for(i=0;i<test;i++)
+    {
+
+        for(j=0;str[i][j]!='\0';j++)
+        {
+            if(str[i][j]=='a')
+            {
+                count ++;
+            }
+            len++;
+        }
+
+        if(count==1)
+        {
+              for(space=0;space<(max-strlen(str[i]+1))/2;space++)
+        {
+            printf(" ");
+        }
+            for(j=0;j<strlen(str[i]);j++)
+            {
+                printf("%c",str[i][j]);
+            }
+            printf("a");
+
+        }
+
+        else if(count%2==1)
+        {
+              for(space=0;space<(max-strlen(str[i]+1))/2;space++)
+        {
+            printf(" ");
+        }
+
+            for(j=0;j<strlen(str[i])-1;j++)
+            {
+                printf("%c",str[i][j]);
+            }
+
+        }
+        else
+        {
+              for(space=0;space<(max-strlen(str[i]+1))/2;space++)
+        {
+            printf(" ");
+        }
+
+            for(j=0;j<strlen(str[i]);j++)
+            {
+                printf("%c",str[i][j]);
+            }
+        }
+         printf("\n");
+
+        count =0;
+        len =0;
+    }
+
+}

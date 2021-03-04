@@ -1,0 +1,41 @@
+#include <stdio.h>
+int p[100000];
+int query[100000];
+int main(void) {
+	// your code goes here
+	long long int np,nquery,i,count,j;
+	count = 0;
+	scanf("%lld",&np);
+	// prisoners entry(ID)
+	for(i=0;i<np;i++)
+	{
+		scanf("%lld",&p[i]);
+	}
+	scanf("%lld",&nquery);
+	for(j=0;j<nquery;j++)
+	{
+		scanf("%lld",&query[j]);
+	}
+	// comp
+	for(j=0;j<nquery;j++)
+	{
+		for(i=0;i<np;i++)
+		{
+			if(query[j]==p[i])
+			{
+				count ++;
+			}
+		}
+		if(count>=2)
+		{
+			printf("Yes\n");
+		}
+		else
+		{
+			printf("No\n");
+		}
+		count = 0;
+		
+	}
+	return 0;
+}

@@ -1,0 +1,80 @@
+#include <stdio.h>
+long long int arr[100000];
+int main()
+{
+    long long int matrix,i,j,temp,d1,d2;
+    d1 = d2 = 0;
+    scanf("%lld",&matrix);
+    for(i=0;i<matrix*matrix;i++)
+    {
+        scanf("%lld",&arr[i]);
+    }
+    // if val of matrix is odd 
+    if(matrix%2==1)
+    {
+        // sorting 
+        for(i=1;i<=matrix*matrix;i++)
+        {
+            for(j=1;j<=matrix*matrix-i;j++)
+            {
+                if(arr[j-1]>arr[j])
+                {
+                    temp = arr[j-1];
+                    arr[j-1]=arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }
+       // N-1 largest elements 
+        for(i=1;i<matrix;i++)
+        {
+            d1 = d1 + arr[matrix*matrix-i];
+        }
+        // N-1 smallest elements
+       for(i=0;i<matrix-1;i++)
+       {
+           d2 = d2 + arr[i];
+ 
+ 
+       }
+ 
+       printf("%lld\n",d1-d2);
+ 
+    }
+    // value of matrix is even
+    else if(matrix%2==0)
+    {
+        // sorting 
+        for(i=1;i<=matrix*matrix;i++)
+        {
+            for(j=1;j<=matrix*matrix-i;j++)
+            {
+                if(arr[j-1]>arr[j])
+                {
+                    temp = arr[j-1];
+                    arr[j-1]=arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }
+        // N-1 largest elements 
+        for(i=1;i<=matrix;i++)
+        {
+            d1 = d1 + arr[matrix*matrix-i];
+        }
+        // N-1 smallest elements
+       for(i=0;i<matrix;i++)
+       {
+           d2 = d2 + arr[i];
+ 
+ 
+       }
+ 
+     
+       printf("%lld\n",d1-d2);
+ 
+ 
+    }
+ 
+    return 0;
+}

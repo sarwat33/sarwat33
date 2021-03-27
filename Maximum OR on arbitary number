@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+int arr[1000000];
+int res[1000000];
+int main()
+{
+   long long int test,i,j,ans,len,k,count,max;
+   max = -1;
+   count = 0;
+   scanf("%lld",&test);
+   for(i=0;i<test;i++)
+   {
+       scanf("%lld",&len);
+       for(j=0;j<len;j++)
+       {
+           scanf("%lld",&arr[j]);
+       }
+       for(j=0;j<len;j++)
+       {
+           for(k=j+1;k<len;k++)
+           {
+               res[count] = arr[j]|arr[k];
+               count ++;
+           }
+       }
+       for(j=0;j<count;j++)
+       {
+           if(res[j]>max)
+           {
+               max = res[j];
+           }
+       }
+       printf("Case %lld: %lld\n",i+1,max);
+       max = 0;
+       count = 0;
+   }
+
+    return 0;
+}

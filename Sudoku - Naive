@@ -1,0 +1,241 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+char grid[10][10];
+int arr[10]  = {0};
+int arr2[10] = {0};
+int sum = 0;
+bool row()
+{
+    for(int i=1;i<=9;i++)
+    {
+        for(int j=1;j<=9;j++)
+        {
+            arr[grid[i][j] - '0'] += 1;
+        }
+
+        for(int k=1;k<=9;k++)
+       {
+        if(arr[k] !=1)
+        {
+            return false;
+        }
+       }
+
+       // filling with 0 to initialize again
+    for(int k=1;k<=9;k++)
+    {
+        arr[k] = 0;
+    }
+
+
+    }
+
+    return true;
+
+
+}
+bool col()
+{
+
+    for(int i=1;i<=9;i++)
+    {
+        for(int j=1;j<=9;j++)
+        {
+            arr2[grid[j][i] - '0'] +=1 ;
+
+        }
+
+        for(int k=1;k<=9;k++)
+        {
+            if(arr2[k] != 1)
+            {
+                return false;
+            }
+        }
+
+        // initializing with 0
+
+        for(int k=1 ; k<=9;k++)
+        {
+            arr2[k] = 0;
+        }
+    }
+
+
+    return true;
+
+}
+bool sub1()
+{
+
+    sum = 0;
+    for(int i=1;i<=3;i++)
+    {
+        for(int j=1;j<=3;j++)
+        {
+            sum = sum + (grid[i][j]) - '0';
+        }
+    }
+    
+    if(sum == 45)
+    return  true;
+    else
+    return false;
+
+
+}
+bool sub2()
+{
+    sum = 0;
+
+    for(int i=1;i<=3;i++)
+    {
+        for(int j=4;j<=6;j++)
+        {
+            sum = sum + (grid[i][j]) - '0';
+        }
+    }
+    
+    if(sum == 45)
+    return  true;
+    else
+    return false;
+
+}
+bool sub3()
+{
+    sum= 0;
+    for(int i=1;i<=3;i++)
+    {
+        for(int j=7;j<=9;j++)
+        {
+            sum = sum + (grid[i][j]) - '0';
+        }
+    }
+    if(sum == 45)
+    return  true;
+    else
+    return false;
+
+
+}
+bool sub4()
+{
+    sum= 0;
+    for(int i=4;i<=6;i++)
+    {
+        for(int j=1;j<=3;j++)
+        {
+            sum = sum + (grid[i][j]) - '0';
+        }
+    }
+    if(sum == 45)
+    return  true;
+    else
+    return false;
+
+
+
+}
+bool sub5()
+{
+    sum= 0;
+    for(int i=4;i<=6;i++)
+    {
+        for(int j=4;j<=6;j++)
+        {
+            sum = sum + (grid[i][j]) - '0';
+        }
+    }
+    if(sum == 45)
+    return  true;
+    else
+    return false;
+
+}
+bool sub6()
+{
+    sum= 0;
+    for(int i=4;i<=6;i++)
+    {
+        for(int j=7;j<=9;j++)
+        {
+            sum = sum + (grid[i][j]) - '0';
+        }
+    }
+    if(sum == 45)
+    return  true;
+    else
+    return false;
+}
+bool sub7()
+{
+    sum= 0;
+    for(int i=7;i<=9;i++)
+    {
+        for(int j=1;j<=3;j++)
+        {
+            sum = sum + (grid[i][j]) - '0';
+        }
+    }
+    if(sum == 45)
+    return  true;
+    else
+    return false;
+}
+bool sub8()
+{
+    sum= 0;
+    for(int i=7;i<=9;i++)
+    {
+        for(int j=4;j<=6;j++)
+        {
+            sum = sum + (grid[i][j]) - '0';
+        }
+    }
+    if(sum == 45)
+    return  true;
+    else
+    return false;
+}
+bool sub9()
+{
+    sum= 0;
+    for(int i=7;i<=9;i++)
+    {
+        for(int j=7;j<=9;j++)
+        {
+            sum = sum + (grid[i][j]) - '0';
+        }
+    }
+    if(sum == 45)
+    return  true;
+    else
+    return false;
+}
+int main()
+{
+    for(int i=1;i<=9;i++)
+    {
+        for(int j=1;j<=9;j++)
+        {
+            cin >> grid[i][j];
+        }
+    }
+    if(row() == true && col() ==  true)
+    {
+        if(sub1() == true && sub2() == true && sub3() == true && sub4() == true && sub5() == true && sub6() == true && sub7() == true && sub8() == true && sub9() ==true)
+        {
+            cout << "Congratulations!" ;
+        } 
+    }
+    else
+    {
+        cout << "Oh No!";
+    }
+
+    
+    return 0;
+}
+

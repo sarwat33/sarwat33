@@ -24,9 +24,7 @@ Email: arabian.piratesarwat@gmail.com
 ### <p>Hello, this is Sarwat Razzaque Choudhury, a CS enthusiast trying to learn something new and trying to apply them everyday.I want to develop the skills to transform an idea to reality with the help of my code.Hope you would like my mini projects</p>
 <hr>  
 
-
-
-<hr><hr>
+<hr>
 
 #### <bold><u>Skills</u></bold>:
 1. C++

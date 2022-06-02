@@ -26,7 +26,7 @@ Email: arabian.piratesarwat@gmail.com
 
 <hr>
 
-#### <bold><u>Skills</u></bold>:
+#### <bold><u>Skills (hands on experience)</u></bold>:
 1. C++
 2. Python
 3. C

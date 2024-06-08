@@ -44,7 +44,7 @@ Email: arabian.piratesarwat@gmail.com
 ![html](./images/html_logo.png)
 ![css](./images/css_logo.png)
 ![mysql](./images/mysql_logo.png)
-![arduino](./images/arduino logo.png)
+![arduino](./images/arduino_logo.png)
 
 
 

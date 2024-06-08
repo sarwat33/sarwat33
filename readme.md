@@ -21,18 +21,19 @@ Email: arabian.piratesarwat@gmail.com
 ![profile](./images/profile.png)
 
 
-### <p>Hello, this is Sarwat Razzaque Choudhury, a CS enthusiast trying to learn something new and trying to apply them everyday.I want to develop the skills to transform an idea to reality with the help of my code.Hope you would like my mini projects</p>
+### <p>Techie,NoobLearner,Microcontroller enthusiast</p>
 <hr>  
 
 <hr>
 
-#### <bold><u>Skills (hands on experience)</u></bold>:
+#### <bold><u>(hands on experience::Noob)</u></bold>:
 1. C++
 2. Python
 3. C
 4. PHP
 5. HTML
 6. CSS
+7. Arduino (microcontroller)
 #### <bold><u>Database:</u></bold>
 1. MySQL
 <hr>
@@ -43,6 +44,7 @@ Email: arabian.piratesarwat@gmail.com
 ![html](./images/html_logo.png)
 ![css](./images/css_logo.png)
 ![mysql](./images/mysql_logo.png)
+![arduino]
 
 
 

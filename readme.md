@@ -15,18 +15,18 @@ Email: arabian.piratesarwat@gmail.com
 #### TechGeek
 #### Explorer
 ####
-#### CS Enthusiast 
+#### CS and Electronics Enthusiast
 <hr> 
 
 ![profile](./images/profile.png)
 
 
-### <p>Techie,NoobLearner,Microcontroller enthusiast</p>
+### <p>Techie,Learner</p>
 <hr>  
 
 <hr>
 
-#### <bold><u>(hands on experience::Noob)</u></bold>:
+#### <bold><u>(hands on experience)</u></bold>:
 1. C++
 2. Python
 3. C

@@ -1,6 +1,6 @@
 # Hi, I'm Sarwat 👋
 
-Welcome to my GitHub profile! I’m an **Electrical and Electronics Engineering (EEE) student** with a passion for **software development** and **robotics**. I love building things that solve real-world problems, and I’m currently diving into **ROS 2** to bring my robotics knowledge to life. I’ve also worked on several interesting projects using **Python**, **PHP**, and **C++**.
+Welcome to my GitHub profile! I’m an **Electrical and Electronics Engineering (EEE) student** with a passion for **development** and **robotics**. I love building things that solve real-world problems, and I’m currently diving into **ROS 2** to bring my robotics knowledge to life. I’ve also worked on several interesting projects using **Python**, **PHP**, and **C++**.
 
 ---
 

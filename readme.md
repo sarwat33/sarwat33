@@ -56,7 +56,18 @@ This web-based project includes a system for managing student profiles, results,
   
 ---
 
-### 2. Classic Space Invader Game (Python & Pygame)
+### 2. PCBits --My Dumpyard for all the PCB design projects - **(Discontinued)**
+This PCB dumpyard is all about the PCB designs that I'm currently working on.
+Includes projects like-Full wave bridge rectifier,Reactive light.
+
+**URL**: [PCBits](https://github.com/sarwat33/PCBits)
+
+**Software Used**: *KiCAD*
+
+  
+---
+
+### 3. Classic Space Invader Game (Python & Pygame)
 
 A classic implementation of the popular Space Invader game using **Python** and **Pygame**. The game is simple, fun, and fully playable.
 
@@ -68,7 +79,7 @@ A classic implementation of the popular Space Invader game using **Python** and 
   
 ---
 
-### 3. IMDB Movie Scraper (Python & Requests)
+### 4. IMDB Movie Scraper (Python & Requests)
 
 A Python mini-project that scrapes the latest list of movies from the IMDB database using the **Requests** library. It stores the scraped data in a JSON file, including movie details like name, poster, cast, release date, rating, and votes.
 
@@ -81,7 +92,7 @@ A Python mini-project that scrapes the latest list of movies from the IMDB datab
   
 ---
 
-### 4. CLI TODO App (Python & OOP)
+### 5. CLI TODO App (Python & OOP)
 
 A command-line interface (CLI) based TODO app that uses **OOP** principles to manage tasks. It includes CRUD (Create, Read, Update, Delete) operations for tasks.
 
@@ -93,7 +104,7 @@ A command-line interface (CLI) based TODO app that uses **OOP** principles to ma
   
 ---
 
-### 5. Student Management System (Python & Tkinter)
+### 6. Student Management System (Python & Tkinter)
 
 A simple **Tkinter**-based student management system with login and registration functionality. It can be used to view student results and manage payment records.
 
@@ -105,7 +116,7 @@ A simple **Tkinter**-based student management system with login and registration
   
 ---
 
-### 6. NotWordle (C++) - **Non-API Implementation**
+### 7. NotWordle (C++) - **Non-API Implementation**
 
 A command-line version of the popular **Wordle** game, built in **C++**. This is a **non-API implementation** of the game that recreates the logic and fun of the original game in a simple text-based format.
 
